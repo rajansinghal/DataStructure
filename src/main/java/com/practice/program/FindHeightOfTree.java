@@ -26,24 +26,24 @@ public class FindHeightOfTree {
     }
 
 
-    public int binaryDepth(Node node, int d){
+    public int binaryDepth(Node nodeBFS, int d){
         int leftDepth = d, rightDepth = d;
 
-        if(node.left != null){
-            leftDepth = binaryDepth(node.left, d+1);
+        if(nodeBFS.left != null){
+            leftDepth = binaryDepth(nodeBFS.left, d+1);
         }
-        if(node.right != null){
-            rightDepth = binaryDepth(node.right, d+1);
+        if(nodeBFS.right != null){
+            rightDepth = binaryDepth(nodeBFS.right, d+1);
         }
 
         return leftDepth > rightDepth ? leftDepth : rightDepth;
     }
 
-    public int binaryDepth2(Node node){
-        if(node == null)
+    public int binaryDepth2(Node nodeBFS){
+        if(nodeBFS == null)
             return 0;
-        int left = binaryDepth2(node.left);
-        int right = binaryDepth2(node.right);
+        int left = binaryDepth2(nodeBFS.left);
+        int right = binaryDepth2(nodeBFS.right);
 
         int x = left > right ? left+1 : right+1;
         return x;
