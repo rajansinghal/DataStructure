@@ -5,8 +5,10 @@ package com.practice.program;
  */
 public class MovingZeroToEnd {
     public static void main(String arr[]){
-
-        moveZero(2307046); //out put should be : 2374600
+        int i = 832324;
+        System.out.println(i/1);
+        System.out.println(i%1);
+       // moveZero(2307046); //out put should be : 2374600
     }
 
     public static void moveZero(int z){

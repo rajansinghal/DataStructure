@@ -11,7 +11,7 @@ public class BalancedBracket {
         String[] str_arr = new String[15];
 
         BalancedBracket b = new BalancedBracket();
-        System.out.println(b.isBalanced("(({}()[]))"));
+        System.out.println(b.isBalanced("}][}}(}][))]"));
 
 
     }
@@ -22,6 +22,9 @@ public class BalancedBracket {
         if (value.length() % 2 == 0) {
             String newValue = new String();
             char[] ch = value.toCharArray();
+            if(value.length() > 0 && value.startsWith("}") || value.startsWith("]") || value.startsWith(")")){
+                return false;
+            }
             if (value.length() == 0) {
                 flag = true;
                 return flag;

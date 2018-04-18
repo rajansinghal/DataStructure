@@ -69,11 +69,14 @@ public class RatMaze2 {
     }
 
     public static  void  main(String arr[]){
-         int maze[][] =  {{0,  0, 0, 0}, {0, -1, 0, 0},{-1, 0, 0, 0},{0,  0, 0, 0}};
-
-         RatMaze2 rm2= new RatMaze2();
+        int maze[][] = {{1, 0, 0, 0},
+                {1, 1, 0, 1},
+                {0, 1, 0, 0},
+                {1, 1, 1, 1}
+        };
+        RatMaze2 rm2= new RatMaze2();
         int count = rm2.countPaths(maze);
         System.out.println(count);
-        }
+    }
 
 }
