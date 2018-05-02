@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.optimization;
 
 /**
  * Created by rsinghal on 11/9/2017.

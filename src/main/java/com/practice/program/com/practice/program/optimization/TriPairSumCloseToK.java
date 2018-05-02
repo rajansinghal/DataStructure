@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.optimization;
 public class TriPairSumCloseToK {
 
     public void getTriPair(int[] arr, int expectedTriSum) {

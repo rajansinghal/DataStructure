@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.tree;
 
 import java.util.InputMismatchException;
 import java.util.LinkedList;

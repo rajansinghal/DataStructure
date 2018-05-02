@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.string;
 
 /**
  * Created by rsinghal on 11/9/2017.
@@ -11,7 +11,7 @@ public class BalancedBracket {
         String[] str_arr = new String[15];
 
         BalancedBracket b = new BalancedBracket();
-        System.out.println(b.isBalanced("}][}}(}][))]"));
+        System.out.println(b.isBalanced("(([)])"));
 
 
     }

@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.matrix;
 /* Java program to solve Rat in a Maze problem using
    backtracking */
 
@@ -94,9 +94,9 @@ public class RatMaze
     {
         RatMaze rat = new RatMaze();
         int maze[][] = {{1, 0, 0, 0},
-                {1, 1, 0, 1},
-                {0, 1, 0, 0},
-                {1, 1, 1, 1}
+                        {1, 1, 0, 1},
+                        {1, 1, 0, 0},
+                        {0, 1, 1, 1}
         };
         rat.solveMaze(maze);
     }

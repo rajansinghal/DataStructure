@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.tree;
 
 /**
  * Created by rsinghal on 11/14/2017.

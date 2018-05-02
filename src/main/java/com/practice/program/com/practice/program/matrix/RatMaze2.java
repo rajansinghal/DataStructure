@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.com.practice.program.matrix;
 
 /**
  * Created by rsinghal on 1/29/2018.
@@ -69,13 +69,19 @@ public class RatMaze2 {
     }
 
     public static  void  main(String arr[]){
-        int maze[][] = {{1, 0, 0, 0},
+        /*int maze[][] = {{1, 0, 0, 0},
                 {1, 1, 0, 1},
                 {0, 1, 0, 0},
                 {1, 1, 1, 1}
+        };*/
+        //https://www.geeksforgeeks.org/count-number-ways-reach-destination-maze/
+        int maze1[][] = {{0, -1, -1, -1},
+                         {0,  0, -1,  0},
+                         {-1, 0, -1, -1},
+                         {0,  0,  0,  0}
         };
         RatMaze2 rm2= new RatMaze2();
-        int count = rm2.countPaths(maze);
+        int count = rm2.countPaths(maze1);
         System.out.println(count);
     }
 
