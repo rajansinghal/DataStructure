@@ -22,6 +22,25 @@ public class Phone {
                 {"Cricket", "Soccer", "Chess"}};
 
         printAllCombinations(input, "", 0);
+        //output
+       /* John plays cricket
+        John plays soccer
+        John plays chess
+        John hates cricket
+        John hates soccer
+        John hates chess
+        John Watches cricket
+        John Watches soccer
+        John Watches chess
+        Emma plays cricket
+        Emma plays soccer
+        Emma plays chess
+        Emma hates cricket
+        Emma hates soccer
+        Emma hates chess
+        Emma Watches cricket
+        Emma Watches soccer
+        Emma Watches chess*/
     }
 
 }

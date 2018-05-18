@@ -17,8 +17,8 @@ public class StringProblem {
         StringProblem.findAllUniqueSubString("aaa");*/
         // StringProblem.findAllSubset("abc");
         // StringProblem.findAllPermutationOfString("abc");
-       /* StringProblem.reverseWordsInSentence("geeks quiz practice code");
-        StringProblem.reverseCharsOfWordsInSentence("skeeg ziuq ecitcarp edoc ");
+        StringProblem.reverseWordsInSentence("geeks quiz practice code");
+       /* StringProblem.reverseCharsOfWordsInSentence("skeeg ziuq ecitcarp edoc ");
         */
         StringProblem.isBalancedBracket();
 

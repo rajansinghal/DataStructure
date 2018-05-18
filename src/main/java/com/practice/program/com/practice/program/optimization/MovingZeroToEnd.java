@@ -5,13 +5,13 @@ package com.practice.program.com.practice.program.optimization;
  */
 public class MovingZeroToEnd {
     public static void main(String arr[]){
-        int i = 832324;
+        /*int i = 832324;
         System.out.println(i/1);
-        System.out.println(i%1);
-       // moveZero(2307046); //out put should be : 2374600
+        System.out.println(i%1);*/
+        moveZeroImproved(2307006); //out put should be : 2374600
     }
 
-    public static void moveZero(int z){
+    /*public static void moveZero(int z){
         int i = 1;
         int k = z;
        while(z != 0){
@@ -30,6 +30,20 @@ public class MovingZeroToEnd {
        }
 
         System.out.println(k);
-    }
+    }*/
 
+    public static void moveZeroImproved(int z){
+        int i =1;
+        while(z / i != 0){
+            int q= z/i;
+            int r=z%i;
+
+           if(q %10 == 0)
+            z = q*i + r*10;
+
+            i=i*10;
+        }
+        System.out.println(z);
+    }
 }
+
