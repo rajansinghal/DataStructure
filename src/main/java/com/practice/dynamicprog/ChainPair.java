@@ -11,7 +11,7 @@ class ChainPair {
 
     // This function assumes that arr[] is sorted in increasing order
     // according the first (or smaller) values in pairs.
-    static int maxChainLength(com.practice.dynamciProg.ChainPair arr[], int n)
+    static int maxChainLength(ChainPair arr[], int n)
     {
         int i, j, max = 0;
         int mcl[] = new int[n];
@@ -39,8 +39,8 @@ class ChainPair {
     /* Driver program to test above function */
     public static void main(String[] args)
     {
-        com.practice.dynamciProg.ChainPair arr[] = new com.practice.dynamciProg.ChainPair[] {new com.practice.dynamciProg.ChainPair(5,24), new com.practice.dynamciProg.ChainPair(15, 25),
-                new com.practice.dynamciProg.ChainPair(27, 40), new com.practice.dynamciProg.ChainPair(50, 60)};
+        ChainPair arr[] = new ChainPair[] {new ChainPair(5,24), new ChainPair(15, 25),
+                new ChainPair(27, 40), new ChainPair(50, 60)};
         System.out.println("Length of maximum size chain is " +
                 maxChainLength(arr, arr.length));
     }

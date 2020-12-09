@@ -3,6 +3,20 @@ package com.practice.dynamicprog;
 //https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
 public class LargestSquare
 {
+    /*
+    algo is create a new matrix s
+    fill its first column and row by copying from orig matrix m
+    rest all the col and row are kept 0 in s
+    in third for loop , main logic comes which compare in s , but when m[i][j] == 1
+    -----------------------------------------------
+    1  <--1st comp b/w 1&2-->                   2
+    <-2nd comp b/w o/p of 1st compare and 3-->
+    3                                           0
+
+    -----------------------------------------------
+    4 and 5 loop are simple, no much logic
+     */
+
     // method for Maximum size square sub-matrix with all 1s
     static void printMaxSubSquare(int M[][])
     {

@@ -16,7 +16,7 @@ public class IterationOverObject {
 		l.add(new Object());
 		l.add(new Object());
 		l.add(new Object());
-		Collections.sort(l);
+		//Collections.sort(l);
 /*
  * Bound mismatch: The generic method sort(List<T>) of type Collections is not applicable for the arguments (List<Object>).
  * The inferred type Object is not a valid substitute for the bounded parameter <T extends Comparable<? super T>>

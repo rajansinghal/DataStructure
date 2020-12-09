@@ -16,7 +16,7 @@ public class IteratorExample {
 		list.add("1");
 		list.add("2");
 		list.add("3");
-		for (Object obj : reverse(list))
-			System.out.print(obj + ", ");
+		/*for (Object obj : reverse(list))
+			System.out.print(obj + ", ");*/
 	}
 }
