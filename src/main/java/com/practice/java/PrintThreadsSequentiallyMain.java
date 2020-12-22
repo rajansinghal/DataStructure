@@ -49,4 +49,8 @@ public class PrintThreadsSequentiallyMain {
             }
         }
     }
+
+    static synchronized  void  print(){
+
+    }
 }
