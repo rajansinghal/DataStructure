@@ -153,25 +153,64 @@ public class StringProblem {
     }
 
 
+    //Input  : s = "geeks quiz practice code"
+    // Output : s = "code practice quiz geeks"
+    private static void reverseWordsInSentenceImproved(String input) {
+
+        String s1 = "HELLO ALL TODAY";
+        // TODAY ALL HELLO
+
+        char[] ch = s1.toCharArray();
+        char[] rev = reverse(0,ch.length-1,ch);
+
+        int startIndex=0;
+        int endIndex = 0;
+        for(int m = 0; m < rev.length;m++){
+            if(rev[m] == ' ' || m == rev.length -1) {
+                if (m == rev.length - 1)
+                    endIndex = m;
+                else
+                    endIndex = m - 1;
+
+                rev = reverse(startIndex, endIndex, rev);
+
+            }
+            startIndex = m+1;
+
+        }
+    }
+
+    public static char[] reverse(int startIndex,int endIndex, char[] input){
+        for(int s=startIndex, e=endIndex; s< startIndex + (endIndex - startIndex )/2 ; s++,e--){
+
+            char c = input[s];
+            input[s] = input[e];
+            input[e] = c;
+
+        }
+        return input;
+    }
+
+
     //Input  : s = "skeeg ziuq ecitcarp edoc "
     //Output  : s = "geeks quiz practice code"
     private static void reverseCharsOfWordsInSentence(String input) {
 
-        int m = 0;
-        int n = 0;
+        int startIndex = 0;
+        int endIndex = 0;
         char[] ch = input.toCharArray();
         for (int i = 0; i < ch.length; i++) {
 
             if (ch[i] == ' ') {
 
-                n = i - 1;
-                for (int j = m, k = n; j < m + ((n - m) + 1) / 2; j++, k--) {
-                    char temp = ch[j];
-                    ch[j] = ch[k];
-                    ch[k] = temp;
+                endIndex = i - 1;
+                for (int s = startIndex, e = endIndex; s < startIndex + ((endIndex - startIndex) + 1) / 2; s++, e--) {
+                    char temp = ch[s];
+                    ch[s] = ch[e];
+                    ch[e] = temp;
                 }
 
-                m = i + 1;
+                startIndex = i + 1;
                 System.out.println(new String(ch));
             }
 
@@ -271,5 +310,8 @@ public class StringProblem {
         System.out.println(finalString);
 
     }
+
+
+
 
 }
