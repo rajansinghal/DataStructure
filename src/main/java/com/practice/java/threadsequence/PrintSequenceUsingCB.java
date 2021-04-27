@@ -1,4 +1,4 @@
-package com.practice.java;
+package com.practice.java.threadsequence;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

@@ -1,12 +1,11 @@
+package com.practice.java;
 
-import java.lang.Thread;
-
-class Producer extends Thread {
+class Producer1 extends Thread {
 
     StringBuffer buffer;
     boolean dp = false;
 
-    Producer(){
+    Producer1(){
         buffer = new StringBuffer(4);
     }
      public void run(){
@@ -25,10 +24,10 @@ class Producer extends Thread {
     }
 }
 
-class Consumer extends Thread {
+class Consumer1 extends Thread {
 
-    Producer p;
-    Consumer(Producer temp) {
+    Producer1 p;
+    Consumer1(Producer1 temp) {
         p = temp;
     }
 
@@ -50,8 +49,8 @@ class Consumer extends Thread {
 class SampleProducerConsumer {
     public static void main(String args[])
     {
-        Producer p = new Producer();
-        Consumer c = new Consumer(p);
+        Producer1 p = new Producer1();
+        Consumer1 c = new Consumer1(p);
         Thread t1 = new Thread(p);
         Thread t2 = new Thread(c);
         t2.start();

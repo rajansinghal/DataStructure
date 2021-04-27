@@ -1,4 +1,4 @@
-package com.practice.java;
+package com.practice.java.threadsequence;
 
 //https://java2blog.com/print-sequence-3-threads-java/
 public class PrintThreadsSequentiallyMain {
