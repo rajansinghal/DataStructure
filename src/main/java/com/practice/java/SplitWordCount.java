@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.stream.Collectors;
 
-
+//https://www.javacodemonk.com/top-10-occurring-words-in-a-very-large-file-java-algorithm-f42e0e67
 public class SplitWordCount {
     public static void main(String[] args) {
         List<String> terms = Arrays.asList(
