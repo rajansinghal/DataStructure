@@ -15,10 +15,11 @@ public class StringProblem {
         StringProblem.findAllUniqueSubString("aaa");*/
         // StringProblem.findAllSubset("abc");
         // StringProblem.findAllPermutationOfString("abc");
-        StringProblem.reverseWordsInSentence("geeks quiz practice code");
+        //StringProblem.reverseWordsInSentence("geeks quiz practice code");
        /* StringProblem.reverseCharsOfWordsInSentence("skeeg ziuq ecitcarp edoc ");
         */
-        StringProblem.isBalancedBracket();
+        //StringProblem.isBalancedBracket();
+        commonSuffix("abcddd","xyzddd");
 
     }
 
@@ -311,6 +312,39 @@ public class StringProblem {
 
     }
 
+    //inut abcddd xyzddd
+    //output  ram
+    private static String commonSuffix(String s1, String s2){
+
+        s1="abcran";
+        s2="razraan";
+        char[] inp1 = s1.toCharArray();
+        char[] inp2=  s2.toCharArray();
+
+        String finalCommonSubString = "";
+        for(int i=0; i < inp1.length ; i++){
+
+            int k = i;
+            String subString = "";
+            for(int j=0; j < inp2.length ; j++){
+                if(inp2[j] == inp1[k]){
+                    subString = subString + inp1[k];
+                    // if its the last element than cant increment
+                    if(k == inp1.length -1)
+                        break;
+                    k++;
+                }else{
+                    k = i;
+                    subString = "";
+                }
+
+            }
+            if(finalCommonSubString.length() < subString.length())
+                finalCommonSubString = subString;
+        }
+        System.out.println(finalCommonSubString );
+        return  finalCommonSubString;
+    }
 
 
 
