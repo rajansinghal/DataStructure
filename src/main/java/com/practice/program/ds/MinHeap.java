@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.ds;
 
 //https://www.geeksforgeeks.org/min-heap-in-java/
 // Java implementation of Min heap_arr

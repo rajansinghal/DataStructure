@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.ds;
 
 public class KMPAlgo {
 

@@ -1,4 +1,4 @@
-package com.practice.program.optimization;
+package com.practice.dynamicprog;
 
 /**
  * Created by rsinghal on 4/26/2018.

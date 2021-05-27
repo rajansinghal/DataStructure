@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.ds;
 // Java program for implementation of Heap Sort
 public class HeapSort
 {

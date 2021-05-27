@@ -1,4 +1,4 @@
-package com.practice.program;
+package com.practice.program.ds;
 
 // Java program to print distinct
 // subset sums of a given array.

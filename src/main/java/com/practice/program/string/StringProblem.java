@@ -316,8 +316,6 @@ public class StringProblem {
     //output  ram
     private static String commonSuffix(String s1, String s2){
 
-        s1="abcran";
-        s2="razraan";
         char[] inp1 = s1.toCharArray();
         char[] inp2=  s2.toCharArray();
 
