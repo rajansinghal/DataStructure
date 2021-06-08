@@ -316,8 +316,11 @@ public class StringProblem {
     //output  ram
     private static String commonSuffix(String s1, String s2){
 
+        s1= "Java2blog";
+        s2= "CoreJavaTut";
         char[] inp1 = s1.toCharArray();
         char[] inp2=  s2.toCharArray();
+
 
         String finalCommonSubString = "";
         for(int i=0; i < inp1.length ; i++){
@@ -344,6 +347,28 @@ public class StringProblem {
         return  finalCommonSubString;
     }
 
+    private static String swapString(String input){
+        //String swappedString= "";  "Hello@WOR#D"; // DROWO@lle#H
+        char[] input_arr = input.toCharArray();
+        for (int i=0, j=input_arr.length -1; i < j ; i++, j--){
+
+            char char_i = input_arr[i];
+            char char_j = input_arr[j];
+
+            if(char_i == '@' || char_i == '#'){
+                i++;
+            }
+            if(char_j == '@' || char_j == '#'){
+                j--;
+            }
+
+            char temp = input_arr[i];
+            input_arr[i] = input_arr[j];
+            input_arr[j] = temp;
+
+        }
+        return new String(input_arr);
+    }
 
 
 }
